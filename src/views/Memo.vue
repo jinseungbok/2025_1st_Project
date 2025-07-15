@@ -53,13 +53,13 @@ const procSubmit = async () => {
     </div>
     <div class="mb-3">
       <label for="title" class="form-label">제목</label>
-      <input type="text" id="title" class="form-control p-3"
+      <input type="text" maxlength="50" id="title" class="form-control p-3"
              v-model="state.memo.title" />
     </div>
     <div class="mb-3">
       <label for="content" class="form-label">내용</label>
-      <textarea id="content" class="form-control p-3"
-             v-model="state.memo.content"></textarea>
+      <input id="content" maxlength="300" class="form-control p-3"
+             v-model="state.memo.content" />
     </div>
     <div class="mb-3">
       <label for="content" class="form-label">이미지</label>

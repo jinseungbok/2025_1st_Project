@@ -66,6 +66,8 @@ const remove = async id => {
 
 <style lang="scss" scoped>
 .memo-list {
+
+}
   ::v-deep(.item) {
     background-color: #f8f9fa;
     border: 1px solid #eee;
@@ -81,7 +83,6 @@ const remove = async id => {
   ::v-deep(.item:hover) {
     border-color: #aaa;
   }
-}
 
 .add {
   background-color: skyblue;

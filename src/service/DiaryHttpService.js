@@ -2,12 +2,12 @@ import axios from 'axios';
 axios.defaults.baseURL = 'http://localhost:8080/otd';
 
 class DiaryHttpService {
-    async save(jsonBody) {
-        const res = await axios.get("/otd");
+    async create(jsonBody) {
+        const res = await axios.post("/otd");
         return res.data;
     }
     async findAll(params) {
-        const res = await axios.get("/otd", {params});
+        const res = await axios.get("/otd", { params });
         return res.data;
     }
     async findById(id) {
@@ -19,7 +19,7 @@ class DiaryHttpService {
         return res.data;
     }
     async deleteById(id) {
-        const res = await axios.delete(`"/otd?id=${id}"`);
+        const res = await axios.delete(`/otd?id=${id}`);
         return res.data;
     }
 }
